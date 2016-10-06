@@ -124,7 +124,7 @@ func main() {
 		for _, output := range Outputs {
 			ext := strings.ToLower(filepath.Ext(output))
 			saveFrames := strings.Contains(output, "%") && ext != ".gif"
-			saveFrames = saveFrames && (i == 25 || i == 50 || i == 100 || i == 200 || i == 500 || i == 1000 || i == 2000)
+			saveFrames = saveFrames && (i == 25 || i == 50 || i == 100 || i == 200 || i == 500 || i == 1000 || i == 2000 || i == 5000 || i == 10000)
 			if saveFrames || i == Number {
 				path := output
 				if saveFrames {
